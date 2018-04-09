@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>支付订单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .clear {
+            clear: left;
+        }
+        .p1 {
+            width: 42.7rem;
+            height: 7rem;
+            border-bottom: 0.1rem solid #e4cea9;
+            margin-left: 2.9rem;
+        }
+        .p1 .info {
+            float: left;
+            height: 2rem;
+            line-height: 2rem;
+            font-size: 2rem;
+            font-family: 微软雅黑;
+            font-weight: bold;
+            margin-top: 3.2rem;
+        }
+        .p2,.p3,.p4,.p5 {
+            font-size: 1.6rem;
+            font-family: 微软雅黑;
+            font-weight: bold;
+        }
+        .p2 {
+            width: 36rem;
+            height: 7.8rem;
+            border-bottom: 0.1rem solid #e4cea9;
+            margin-left: 6.3rem;
+        }
+        .p2 .left {
+            float: left;
+            margin-top: 5.3rem;
+        }
+        .p2 .right {
+            float: right;
+            margin-top: 5.3rem;
+        }
+        .p3 {
+            width: 36rem;
+            height: 3.9rem;
+            line-height: 3.9rem;
+            border-bottom: 0.1rem solid #e4cea9;
+            margin-left: 6.3rem;
+        }
+        .p3 .left {
+            float: left;
+        }
+        .p3 .right {
+            float: right;
+        }
+        .p4 {
+            width: 36rem;
+            height: 3.9rem;
+            border-bottom: 0.1rem solid #e4cea9;
+            margin-left: 6.3rem;
+            position: relative;
+        }
+        .p4 .left {
+            position: absolute;
+            left: 0;
+            top: 0.9rem;
+        }
+        .p4 .right {
+            position: absolute;
+            right: 0;
+            top: 0.9rem;
+        }
+        .p5 {
+            width: 36rem;
+            height: 3.9rem;
+            border-bottom: 0.1rem solid #e4cea9;
+            margin-left: 6.3rem;
+            position: relative;
+        }
+        .p5 .left {
+            position: absolute;
+            left: 0;
+            top: 0.9rem;
+        }
+        .p5 .right {
+            position: absolute;
+            right: 0;
+            top: 0.9rem;
+        }
+        .p6 {
+            width: 100%;
+            height: 5rem;
+            line-height: 5rem;
+            text-align: center;
+            background-color: #3d2b7d;
+            position: fixed;
+            bottom: 0;
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: 微软雅黑;
+            color: #d9bb88;
+        }
+        .rem15 {
+            height: 15rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="p1">
+        <div class="info">你的订单信息</div>
+    </div>
+    <div class="clear"></div>
+    <div class="p2"><div class="left">时间：</div><div class="right">2018-04-13</div></div>
+    <div class="p3"><div class="left">价格类型</div><div class="right">奔驰C200教学</div></div>
+    <div class="p4"><div class="left">联系方式</div><div class="right">匠耳15388888888</div></div>
+    <div class="p5"><div class="left">需支付</div><div class="right">需支付1314&yen;</div></div>
+    <div class="p6" onclick="window.location.href='支付成功.html'">支付</div>
+    <div class="rem15"></div>
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    });
+    window.onresize = function () {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    }
+</script>

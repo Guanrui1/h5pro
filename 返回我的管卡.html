@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/magic-check.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .bei {
+            width: 100%;
+            height: 100%;
+            background-image: url("img/root-3/答题背景.jpg");
+            background-size: cover;
+            background-position: 50% 0;
+            overflow: hidden;
+            z-index: -1;
+            position: fixed;
+        }
+        .clear {
+            clear: left;
+        }
+        .float {
+            float: left;
+        }
+        .ban {
+            width: 41.7rem;
+            float: left;
+            margin-top: 8.3rem;
+            margin-left: 3.2rem;
+        }
+        .ban .tit {
+            height: 5.8rem;
+            background-color: #6046e6;
+            border-radius: 1rem 1rem 0rem 0rem;
+            color: #e2a55c;
+            font-weight: bold;
+        }
+        .ban .tit .p1 {
+            font-size: 1.9rem;
+            margin-left: 1.6rem;
+            margin-top: 2.4rem;
+        }
+        .ban .tit .p2 {
+            font-size: 2.4rem;
+            margin-left: 9.6rem;
+            margin-top: 1.8rem;
+        }
+        .ban .tit .p3 {
+            font-size: 1.9rem;
+            margin-left: 9rem;
+            margin-top: 2.4rem;
+        }
+        .ban .cont {
+            height: 29rem;
+            background-color: white;
+            border-radius: 0rem 0rem 1rem 1rem;
+        }
+        .ban .cont .pro {
+            float: left;
+            height: 1.7rem;
+            line-height: 1.7rem;
+            font-size: 1.7rem;
+            color: #644de6;
+            margin-left: 3.3rem;
+            margin-top: 3rem;
+            font-weight: bold;
+        }
+        .ban .cont .p1 {
+            height: 3.3rem;
+            line-height: 3.3rem;
+            margin-top: 2.5rem;
+            font-size: 2rem;
+        }
+        .ban .cont .p1 .magic-radio {
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            margin-left: 3.6rem;
+        }
+        .ban .cont .p1 span {
+            display: inline-block;
+            font-size: 2rem;
+            margin-left: 7.8rem;
+        }
+        .ban .cont .p2 {
+            height: 3.3rem;
+            line-height: 3.3rem;
+            margin-top: 1.5rem;
+            font-size: 2rem;
+        }
+        .ban .cont .p2 .magic-radio {
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            margin-left: 3.6rem;
+        }
+        .ban .cont .p2 span {
+            display: inline-block;
+            font-size: 2rem;
+            margin-left: 7.8rem;
+        }
+        .ban .cont .p3 {
+            height: 3.3rem;
+            line-height: 3.3rem;
+            margin-top: 1.5rem;
+            font-size: 2rem;
+        }
+        .ban .cont .p3 .magic-radio {
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            margin-left: 3.6rem;
+        }
+        .ban .cont .p3 span {
+            display: inline-block;
+            font-size: 2rem;
+            margin-left: 7.8rem;
+        }
+        .ban .cont .p4 {
+            height: 3.3rem;
+            line-height: 3.3rem;
+            margin-top: 1.5rem;
+            font-size: 2rem;
+        }
+        .ban .cont .p4 .magic-radio {
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            margin-left: 3.6rem;
+        }
+        .ban .cont .p4 span {
+            display: inline-block;
+            font-size: 2rem;
+            margin-left: 7.8rem;
+        }
+        .hua {
+            width: 22.4rem;
+            height:5.7rem;
+            background-image: url("img/root-3/提交.png");
+            background-size: 100% 100%;
+            margin: 0 auto;
+            margin-top: 2.2rem;
+            font-size: 1.8rem;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+        .next {
+            width: 26.7rem;
+            height:7.3rem;
+            line-height: 7.3rem;
+            background-image: url("img/root-3/提交.png");
+            background-size: 100% 100%;
+            margin: 0 auto;
+            margin-top: 2.2rem;
+            font-size: 3.2rem;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="bei"></div>
+    <div class="clear"></div>
+    <div class="ban">
+        <div class="tit">
+            <div class="p1 float">1/10</div>
+            <div class="p2 float">安全驾驶</div>
+            <div class="p3 float">科目一</div>
+        </div>
+        <div class="cont">
+            <div class="pro">哪个车速度最慢?</div>
+            <div class="clear"></div>
+            <div class="p1"><input class="magic-radio" type="radio" name="option"><span>A、卡车</span></div>
+            <div class="p2"><input class="magic-radio" type="radio" name="option"><span>B、火车</span></div>
+            <div class="p3"><input class="magic-radio" type="radio" name="option"><span>C、摩托车</span></div>
+            <div class="p4"><input class="magic-radio" type="radio" name="option"><span>D、自行车</span></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="hua">答错了<br>正确答案：A</div>
+    <div class="next">下一题</div>
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    });
+    window.onresize = function () {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    }
+</script>

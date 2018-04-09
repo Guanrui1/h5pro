@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>邀请有礼</title>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .clear {
+            clear: left;
+        }
+        .zhan1 {
+            height: 4rem;
+        }
+        .bei {
+            width: 90%;
+            height: 90%;
+            background-image: url("img/kefu.png");
+            background-size: cover;
+            position: fixed;
+            left: 5%;
+            top: 5%;
+            z-index: -1;
+        }
+        .main {
+            width: 43.6rem;
+            height: 60rem;
+            position: fixed;
+            left: 50%;
+            text-align: center;
+            margin-left: -21.8rem;
+        }
+        .p1 {
+            width: 15.6rem;
+            height: 21.2rem;
+            background-image: url("img/ren.png");
+            background-size: 100% 100%;
+            margin-left: 14rem;
+            margin-top: 6rem;
+            float: left;
+        }
+        .zi1 {
+            font-size: 1.6rem;
+            color: white;
+            font-family: 微软雅黑;
+            margin-top: 3.4rem;
+            line-height: 3.4rem;
+            text-align: center;
+        }
+        .zi2 {
+            font-size: 1.6rem;
+            color: white;
+            font-family: 微软雅黑;
+            line-height: 3.4rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+        .iconfont {
+            color: #d7ba88;
+        }
+        .i1 {
+            font-size: 6rem;
+            float: left;
+            margin-left: 5.8rem;
+            margin-top: 2.7rem;
+        }
+        .i2 {
+            font-size: 7.5rem;
+            margin-left: 2.5rem;
+            margin-top: 2rem;
+            float: left;
+        }
+        .i3 {
+            font-size: 6rem;
+            margin-left: 2.5rem;
+            margin-top: 2.7rem;
+            float: left;
+        }
+        .i4 {
+            font-size: 6.5rem;
+            margin-left: 2.5rem;
+            margin-top: 2rem;
+            float: left;
+        }
+        .zhezhao {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.8;
+            left: 0;
+            top: 0;
+            z-index: 100;
+            display: none;
+            color: white;
+            text-align: center;
+            font-size: 3rem;
+            font-family: 微软雅黑;
+        }
+        .zhezhao .wushi {
+            height: 25%;
+            width: 50%;
+            float: right;
+            position: relative;
+            background-image: url("img/jiantou.png");
+            background-size: 100% 100%;
+        }
+        .clear {
+            clear: left;
+        }
+        .zhezhao .wenzi {
+            margin-left: 4rem;
+            margin-top: 30rem;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<div class="bei"></div>
+<div class="zhan1"></div>
+<div class="main">
+    <div class="p1"></div>
+    <div class="clear"></div>
+    <div class="zi1">好友使用您的尊享贵宾码<br>对方可获50元首单奖励</div>
+    <div class="zi2">好友首单消费后<br>您可获得30元优惠券</div>
+    <fieldset style="width:43.6rem;height:auto;border-top:0.1rem solid #d7ba88; margin-top: 6.4rem; border-bottom:none;border-left:none;border-right:none;box-sizing:border-box;font-size: 2rem;" align="center">
+        <legend style="border:0px; color: #d7ba88;">邀请好友</legend>
+    </fieldset>
+    <i class="iconfont i1 icon-weixin"></i>
+    <i class="iconfont i2 icon-pengyouquan"></i>
+    <i class="iconfont i3 icon-weibo"></i>
+    <i class="iconfont i4 icon-87"></i>
+</div>
+<div class="zhezhao"><div class="wushi"></div><div class="clear"></div><div class="wenzi">点击右上角分享</div></div>
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    });
+    window.onload = function () {
+        $('.iconfont').on('click',function () {
+            document.getElementsByClassName('zhezhao')[0].style.display = "block";
+        })
+        $('.zhezhao').on('click',function () {
+            document.getElementsByClassName('zhezhao')[0].style.display = "none";
+        })
+    }
+    window.onresize = function () {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    }
+</script>

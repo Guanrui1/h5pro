@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>班型</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .zhan1 {
+            height: 2.7rem;
+        }
+        .p1 {
+            width: 48rem;
+            height: 27rem;
+            background-image: url("img/root-2/root-2_2.png");
+            background-size: 100% 100%;
+            position: relative;
+        }
+        .p2 {
+            width: 48rem;
+            height: 27rem;
+            background-image: url("img/root-2/root-2_2.png");
+            background-size: 100% 100%;
+            margin-top: 1.9rem;
+            position: relative;
+        }
+        .p3 {
+            width: 48rem;
+            height: 27rem;
+            background-image: url("img/root-2/root-2_2.png");
+            background-size: 100% 100%;
+            margin-top: 1.9rem;
+            position: relative;
+        }
+        .zi {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 3rem;
+            font-size: 2rem;
+            font-family: 微软雅黑;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="zhan1"></div>
+    <div class="p1"><div class="zi">速成班</div></div>
+    <div class="p2"><div class="zi">奔驰班</div></div>
+    <div class="p3"><div class="zi">速成班</div></div>
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    });
+    window.onresize = function () {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    }
+</script>

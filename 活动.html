@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>活动</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+            position: fixed;
+        }
+        .p1 {
+            width: 48rem;
+            height:24.2rem;
+            background-image: url("img/root-2/root-2_2.png");
+            background-size: 100% 100%;
+        }
+        .p2 {
+            width: 48rem;
+            height: 52rem;
+        }
+        .p2 .tit {
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: '微软雅黑';
+            margin-left: 3.8rem;
+            margin-top: 3.2rem;
+        }
+        .p2 .text {
+            width: 40.3rem;
+            line-height: 3.4rem;
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-left: 5.2rem;
+            margin-top: 2.6rem;
+        }
+        .p3 {
+            width: 48rem;
+            height: 5rem;
+            position: fixed;
+            bottom: 0;
+            font-size: 2rem;
+            color: white;
+            font-weight: bold;
+        }
+        .p3 .left {
+            float: left;
+            width: 23.95rem;
+            height: 5rem;
+            line-height: 5rem;
+            text-align: center;
+            background-color: #3d2b7d;
+        }
+        .p3 .right {
+            float: right;
+            width: 23.95rem;
+            height: 5rem;
+            line-height: 5rem;
+            text-align: center;
+            background-color: #3d2b7d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="p1"></div>
+        <div class="p2">
+                <div class="tit">活动介绍</div>
+                <div class="text">以“风华务实、温馨培训”为办学方针，
+                确立一切服务以学员为中心”的服务理念。
+                以“风华务实、温馨培训”为办学方针，
+                确立一切服务以学员为中心”的服务理念。
+                以“风华务实、温馨培训”为办学方针，
+                确立一切服务以学员为中心”的服务理念。
+                以“风华务实、温馨培训”为办学方针，
+                确立一切服务以学员为中心”的服务理念。
+                以“风华务实、温馨培训”为办学方针，
+                确立一切服务以学员为中心”的服务理念。
+                以“风华务实、温馨培训”为办学方针，
+                确立一切服务以学员为中心”的服务理念。
+                </div>
+        </div>
+        <div class="p3">
+            <div class="left" onclick="window.location.href='了解.html'">了解</div>
+            <div class="right" onclick="window.location.href='信息.html'">报名</div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    });
+    window.onresize = function () {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    }
+</script>

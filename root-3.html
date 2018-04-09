@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("img/root-3/首页背景.jpg");
+            background-size: cover;
+            background-position: 50% 0;
+            overflow: hidden;
+        }
+        .main .t-up {
+            position: absolute;
+            top: 50%;
+            margin-top: -2.5rem;
+            left: 7rem;
+            font-size: 3.8rem;
+            transform:rotate(-10deg);
+            color: white;
+            font-weight: bold;
+        }
+        .main .t-up span {
+            font-size: 5rem;
+            color: #edf524;
+        }
+        .main .t-down {
+            position: absolute;
+            top: 50%;
+            margin-top: 2.5rem;
+            right: 7rem;
+            font-size: 3.8rem;
+            transform:rotate(-10deg);
+            color: white;
+            font-weight: bold;
+        }
+        .main .t-down span {
+            font-size: 5rem;
+            color: #edf524;
+        }
+        .main .start {
+            position: absolute;
+            width: 25.6rem;
+            height: 7rem;
+            left: 50%;
+            bottom: 10rem;
+            margin-left: -12.8rem;
+            background-image: url("img/root-3/开始答题.png");
+            background-size: 100% 100%;
+            color: white;
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .main .start:hover {
+            opacity: 0.2;
+        }
+        .h1_5 {
+            height: 0.8rem;
+        }
+        .main .my_score{
+            position: absolute;
+            width: 5.9rem;
+            height: 10.3rem;
+            left: 0;
+            bottom: 20rem;
+            font-size: 2.4rem;
+            color: white;
+            font-weight: bold;
+            background-image: url("img/root-3/我的成绩.png");
+            background-size: 100% 100%;
+        }
+        .h1_3 {
+            height: 1.2rem;
+        }
+        .main .my_score:hover {
+            opacity: 0.2;
+        }
+        .main .act{
+            position: absolute;
+            width: 5.9rem;
+            height: 10.3rem;
+            right: 0;
+            bottom: 20rem;
+            font-size: 2.4rem;
+            color: white;
+            font-weight: bold;
+            background-image: url("img/root-3/活动规则.png");
+            background-size: 100% 100%;
+            text-align: right;
+        }
+        .main .act:hover {
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="t-up">启驾<span>学车</span>在线答题</div>
+        <div class="t-down">在线答题<span>赢取</span>积分</div>
+        <div class="start" onclick="window.location.href='答题选择.html'"><div class="h1_5"></div>开始答题</div>
+        <div class="my_score" onclick="window.location.href='我的成绩.html'"><div class="h1_3"></div>我的成绩</div>
+        <div class="act" onclick="window.location.href='活动规则.html'"><div class="h1_3"></div>活动规则</div>
+    </div>
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    });
+    window.onresize = function () {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth / 48 + "px";
+    }
+</script>

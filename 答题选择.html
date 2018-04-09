@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .bei {
+            width: 100%;
+            height: 100%;
+            background-image: url("img/root-3/答题背景.jpg");
+            background-size: cover;
+            background-position: 50% 0;
+            overflow: hidden;
+            z-index: -1;
+            position: fixed;
+        }
+        .clear {
+            clear: left;
+        }
+        .p1,.p2,.p3,.p4 {
+            width: 10.9rem;
+            height:10.5rem;
+            background-image: url("img/root-3/科目一答题.png");
+            background-size: 100% 100%;
+        }
+        .p1 {
+            float: left;
+            margin-left: 19rem;
+            margin-top: 3rem;
+        }
+        .p2 {
+            margin-left: 5.7rem;
+            margin-top: 3.7rem;
+        }
+        .p3 {
+            margin-left: 13.4rem;
+            margin-top: 1.6rem;
+        }
+        .p4 {
+            margin-left: 27.6rem;
+            margin-top: 1.6rem;
+        }
+        .p5 {
+            width: 7.4rem;
+            height: 11.1rem;
+            float: left;
+            background-image: url("img/root-3/我的成绩.png");
+            margin-top: 6.6rem;
+            background-size: 100% 100%;
+            text-align: left;
+        }
+        .p6 {
+            width: 7.4rem;
+            height: 11.1rem;
+            float: right;
+            background-image: url("img/root-3/活动规则.png");
+            margin-top: 6.6rem;
+            background-size: 100% 100%;
+            text-align: right;
+        }
+        .er_3 {
+            height: 2rem;
+        }
+        .fon2 {
+            font-size: 2.4rem;
+            font-weight: bold;
+            color: white;
+        }
+        .fon {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+        .zhan {
+            height: 10.4rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="bei"></div>
+    <div class="p1 fon"><div class="er_3"></div>科目四<br>安全文明<br>驾驶</div>
+    <div class="clear"></div>
+    <div class="p2 fon"><div class="er_3"></div>科目三<br>路考</div>
+    <div class="p3 fon"><div class="er_3"></div>科目二<br>驾驶基础</div>
+    <div class="p4 fon"><div class="er_3"></div>科目一<br>安全驾驶</div>
+    <div class="p5 fon2" onclick="window.location.href='我的成绩.html'"><div class="er_3"></div>我的<br>成绩</div>
+    <div class="p6 fon2" onclick="window.location.href='活动规则.html'"><div class="er_3"></div>活动<br>规则</div>
+    <div class="clear"></div>
+    <div class="zhan"></div>
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    });
+    window.onresize = function () {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    }
+</script>

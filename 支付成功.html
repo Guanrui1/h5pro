@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>支付成功</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .bei {
+            width: 100%;
+            height: 100%;
+            background-image: url("img/支付成功.png");
+            background-size: cover;
+            background-position: 50% 0;
+            overflow: hidden;
+            z-index: -1;
+            position: fixed;
+        }
+        .clear {
+            clear: left;
+        }
+        .tishi {
+            float: left;
+            width: 100%;
+            margin-top: 29rem;
+            font-size: 2.4rem;
+            font-family: '微软雅黑';
+            text-align: center;
+            height: 2.4rem;
+            line-height: 2.4rem;
+            font-weight: bold;
+        }
+        .queding {
+            width: 36.6rem;
+            height: 4.6rem;
+            line-height: 4.6rem;
+            border-radius: 2.3rem;
+            background-color: #3d2b7d;
+            font-size: 2.4rem;
+            color: white;
+            text-align: center;
+            font-family: 微软雅黑;
+            font-weight: bold;
+            margin: 0 auto;
+            margin-top: 6.3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="bei"></div>
+    <div class="tishi">恭喜您支付成功</div>
+    <div class="clear"></div>
+    <div class="queding" onclick="window.location.href='root-2.html'">确定</div>
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    });
+    window.onresize = function () {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    }
+</script>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>客服中心</title>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .clear {
+            clear: left;
+        }
+        .zhan1 {
+            height: 4rem;
+        }
+        .bei {
+            width: 90%;
+            height: 90%;
+            background-image: url("img/kefu.png");
+            background-size: cover;
+            position: fixed;
+            left: 5%;
+            top: 5%;
+            z-index: -1;
+        }
+        .main {
+            width: 43.6rem;
+            height: 60rem;
+            position: fixed;
+            left: 50%;
+            margin-left: -21.8rem;
+        }
+        .p1 {
+            width: 15.6rem;
+            height: 21.2rem;
+            background-image: url("img/ren.png");
+            background-size: 100% 100%;
+            margin-left: 14rem;
+            margin-top: 6rem;
+            float: left;
+        }
+        .zi1,.zi3,.zi5 {
+            font-size: 2rem;
+            color: white;
+            font-family: 微软雅黑;
+            margin-top: 1rem;
+            margin-left: 5rem;
+        }
+        .zi2,.zi4,.zi6 {
+            font-size: 1.6rem;
+            color: white;
+            font-family: 微软雅黑;
+            line-height: 3.4rem;
+            margin-top: 1rem;
+            margin-left: 5rem;
+        }
+    </style>
+</head>
+<body>
+<div class="swiper-container">
+<div class="bei"></div>
+<div class="zhan1"></div>
+<div class="main">
+    <div class="p1"></div>
+    <div class="clear"></div>
+    <div class="zi1">联系方式</div>
+    <div class="zi2">培训经理: 匠耳<br>
+        联系电话: 0000-181818<br>
+        手机: 15388888888</div>
+    <div class="zi3">工作时间</div>
+    <div class="zi4">周一至周六: 8:00 - 23:00</div>
+    <div class="zi5">公司地址</div>
+    <div class="zi6">北京市朝阳区8888888</div>
+    </pre>
+</div>
+</div>
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    });
+    window.onresize = function () {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    }
+</script>

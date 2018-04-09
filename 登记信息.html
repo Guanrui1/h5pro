@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .bei {
+            width: 100%;
+            height: 100%;
+            background-image: url("img/root-3/答题背景.jpg");
+            background-size: cover;
+            background-position: 50% 0;
+            overflow: hidden;
+            z-index: -1;
+            position: fixed;
+        }
+        .clear {
+            clear: left;
+        }
+        .p1 {
+            float: left;
+            margin-left: 19.3rem;
+            margin-top: 6.4rem;
+            height: 2.4rem;
+            line-height: 2.4rem;
+            font-size: 2.4rem;
+            color: #feb942;
+            font-weight: bold;
+            letter-spacing: 0.2rem;
+        }
+        .p2 {
+             height: 5.7rem;
+             margin-top: 4rem;
+             font-size: 1.9rem;
+         }
+        .p2 .tel {
+            float: left;
+            height: 5.7rem;
+            line-height: 5.7rem;
+            font-size: 1.9rem;
+            color: #feb942;
+            margin-left: 2.5rem;
+        }
+        .p2 input {
+            width: 35.3rem;
+            height: inherit;
+            border-radius: 1rem;
+            margin-left: 1.3rem;
+        }
+        .p3 {
+            height: 5.7rem;
+            margin-top: 4rem;
+            font-size: 1.9rem;
+        }
+        .p3 .phone {
+            float: left;
+            height: 5.7rem;
+            line-height: 5.7rem;
+            font-size: 1.9rem;
+            color: #feb942;
+            margin-left: 2.5rem;
+        }
+        .p3 input {
+            width: 35.3rem;
+            height: inherit;
+            border-radius: 1rem;
+            margin-left: 1.3rem;
+        }
+        .p4 {
+            width: 15.5rem;
+            height: 4.3rem;
+            line-height: 4.3rem;
+            text-align: center;
+            background-image: url("img/root-3/返回我的关卡.png");
+            background-size: 100% 100%;
+            color: white;
+            margin-left: 16.4rem;
+            margin-top: 9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="bei"></div>
+    <div class="p1">登记信息</div>
+    <div class="clear"></div>
+    <div class="p2"><div class="tel">联系电话</div><input type="text"></div>
+    <div class="p3"><div class="phone">手机号码</div><input type="text"></div>
+    <div class="p4">提交</div>
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    });
+    window.onresize = function () {
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/48 + "px";
+    }
+</script>
